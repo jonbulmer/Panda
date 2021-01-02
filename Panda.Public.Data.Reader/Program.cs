@@ -50,7 +50,7 @@ namespace Panda.Public.Data.Reader
         }
         public void ReadData()
         {
-            string thisJson = _publicJsonDataReader.ReadJson("ALB");
+            string thisJson = _publicJsonDataReader.ReadJson("BEL");
         }
     }
 
@@ -63,18 +63,26 @@ namespace Panda.Public.Data.Reader
             WebClient client = new WebClient();
             Stream stream = client.OpenRead("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.json");
             StringBuilder sb = new StringBuilder();
+            var doWriteJson = false;
+            sb.Append("{");
             using (var reader = new StreamReader(stream))
             {
                 while (!reader.EndOfStream)
                 {
                     readJson = reader.ReadLine();
                     readJson = readJson.Replace("\"", "'");
-                    sb.Append(readJson);
-                    if (readJson ==  "    '"+ county +"': {")
+                    if (readJson ==  "    '"+ county +"': {" || doWriteJson == true)
                     {
-                        sb.Replace("    '" + county + "': {", "}");
-                        readJson = sb.ToString();
-                        return readJson;
+                        doWriteJson = true;
+                        sb.Append(readJson);
+                        //sb.Replace("    '" + county + "': {", "}");
+                        if (readJson == "    },")
+                        {
+                            sb.Remove(sb.Length - 1, 1);
+                            sb.Append("}");
+                            readJson = sb.ToString();
+                            return readJson;
+                        } 
                     }
                 }
             }
