@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.API.Service", "Panda.API.Service\Panda.API.Service.csproj", "{72D4263E-EB20-49DC-879A-DFADFA1F503C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Public.Data.Reader", "Panda.Public.Data.Reader\Panda.Public.Data.Reader.csproj", "{517A5C5A-C5C4-4A5B-BEA3-C34EE6A59465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Public.Data.Reader", "Panda.Public.Data.Reader\Panda.Public.Data.Reader.csproj", "{517A5C5A-C5C4-4A5B-BEA3-C34EE6A59465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SQL.Data", "Panda.SQL.Data\Panda.SQL.Data.csproj", "{3A9B55D9-120F-4598-AC3E-CF3C0AB68A7C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Panda.Database", "Panda.Database\Panda.Database.sqlproj", "{DD92461E-DF1C-4D44-867B-19E6D5DF445B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,16 @@ Global
 		{517A5C5A-C5C4-4A5B-BEA3-C34EE6A59465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{517A5C5A-C5C4-4A5B-BEA3-C34EE6A59465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{517A5C5A-C5C4-4A5B-BEA3-C34EE6A59465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9B55D9-120F-4598-AC3E-CF3C0AB68A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9B55D9-120F-4598-AC3E-CF3C0AB68A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9B55D9-120F-4598-AC3E-CF3C0AB68A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9B55D9-120F-4598-AC3E-CF3C0AB68A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD92461E-DF1C-4D44-867B-19E6D5DF445B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

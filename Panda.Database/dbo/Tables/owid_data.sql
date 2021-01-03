@@ -1,0 +1,25 @@
+﻿CREATE Table [dbo].[owid_data]
+(
+	[Id]	INT	IDENTITY (1,1) NOT NULL,
+	[date]  DATETIME NULL,
+	[total_cases] DECIMAL(16,4) NULL,
+    [new_cases"]  DECIMAL(16,4) NULL,
+    [new_cases_smoothed] DECIMAL(16,4) NULL,
+    [total_deaths] DECIMAL(16,4) NULL,
+    [new_deaths] DECIMAL(16,4) NULL,
+    [new_deaths_smoothed] DECIMAL(16,4) NULL,
+    [total_cases_per_million] DECIMAL(16,4) NULL,
+    [new_cases_per_million] DECIMAL(16,4) NULL,
+    [new_cases_smoothed_per_million] DECIMAL(16,4) NULL,
+    [total_deaths_per_million] DECIMAL(16,4) NULL,
+    [new_deaths_per_million] DECIMAL(16,4) NULL,
+    [new_deaths_smoothed_per_million] DECIMAL(16,4) NULL,
+    [new_tests] DECIMAL(16,4) NULL,
+    [total_tests] DECIMAL(16,4) NULL,
+    [total_tests_per_thousand] DECIMAL(16,4) NULL,
+    [new_tests_per_thousand] DECIMAL(16,4) NULL,
+    [new_tests_smoothed] DECIMAL(16,4) NULL,
+    [new_tests_smoothed_per_thousand] DECIMAL(16,4) NULL,
+    [positive_rate] DECIMAL(16,4) NULL,
+    [tests_per_case] DECIMAL(16,4) NULL
+);
