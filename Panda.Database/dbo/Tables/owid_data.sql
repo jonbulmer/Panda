@@ -1,9 +1,10 @@
 ﻿CREATE Table [dbo].[owid_data]
 (
 	[Id]	INT	IDENTITY (1,1) NOT NULL,
+    [CountyId] INT NOT NULL,   
 	[date]  DATETIME NULL,
 	[total_cases] DECIMAL(16,4) NULL,
-    [new_cases"]  DECIMAL(16,4) NULL,
+    [new_cases]  DECIMAL(16,4) NULL,
     [new_cases_smoothed] DECIMAL(16,4) NULL,
     [total_deaths] DECIMAL(16,4) NULL,
     [new_deaths] DECIMAL(16,4) NULL,
@@ -21,5 +22,7 @@
     [new_tests_smoothed] DECIMAL(16,4) NULL,
     [new_tests_smoothed_per_thousand] DECIMAL(16,4) NULL,
     [positive_rate] DECIMAL(16,4) NULL,
-    [tests_per_case] DECIMAL(16,4) NULL
+    [tests_per_case] DECIMAL(16,4) NULL,
+	CONSTRAINT [PK_OwidData] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_OwidData_OwidCounties] FOREIGN KEY ([CountyId]) REFERENCES [dbo].[owid_country] ([Id])
 );
