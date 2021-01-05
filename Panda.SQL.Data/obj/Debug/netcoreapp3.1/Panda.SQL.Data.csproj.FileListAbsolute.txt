@@ -1,0 +1,5 @@
+C:\Users\jonbu\Documents\GitHub\Panda\Panda.SQL.Data\bin\Debug\netcoreapp3.1\Panda.SQL.Data.deps.json
+C:\Users\jonbu\Documents\GitHub\Panda\Panda.SQL.Data\bin\Debug\netcoreapp3.1\Panda.SQL.Data.dll
+C:\Users\jonbu\Documents\GitHub\Panda\Panda.SQL.Data\obj\Debug\netcoreapp3.1\Panda.SQL.Data.csprojAssemblyReference.cache
+C:\Users\jonbu\Documents\GitHub\Panda\Panda.SQL.Data\obj\Debug\netcoreapp3.1\Panda.SQL.Data.AssemblyInfoInputs.cache
+C:\Users\jonbu\Documents\GitHub\Panda\Panda.SQL.Data\obj\Debug\netcoreapp3.1\Panda.SQL.Data.AssemblyInfo.cs

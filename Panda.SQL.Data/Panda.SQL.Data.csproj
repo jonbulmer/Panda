@@ -7,6 +7,11 @@
   <ItemGroup>
     <Folder Include="Dto\GlobalGetDto\" />
     <Folder Include="Dto\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
   </ItemGroup>
 
 </Project>
